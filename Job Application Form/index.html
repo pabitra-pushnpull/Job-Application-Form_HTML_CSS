@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <div class="head_image">
+          <img src="corporate_jobs.jpg" alt="Sorry !!" />
+        </div>
+        <h1>Job Application <span class="title_small">(Web)</span></h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name"> First Name </label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="Enter your first name"
+                autofocus
+              />
+            </div>
+            <div class="form_control">
+              <label for="last_name"> Last Name </label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div class="form_control">
+              <label for="email"> Email </label>
+              <input
+                type="email"
+                name="user_email"
+                id="email"
+                placeholder="Enter your Email"
+              />
+            </div>
+            <div class="form_control">
+              <label>Job Role</label>
+              <select name="user_job_role" id="user_job_role">
+                <option value="">!! Select your role !!</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="fullStack">FullStack Developer</option>
+                <option value="ui_ux">UI/UX Developer</option>
+                <option value="manager">Manager</option>
+              </select>
+            </div>
+            <div class="textarea_control">
+              <label for="address">Address</label>
+              <textarea
+                name="user_address"
+                id="address"
+                rows="4"
+                cols="50"
+                placeholder="Enter your Address"
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="city"> City </label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div class="form_control">
+              <label for="pin_code"> Pin-Code </label>
+              <input
+                type="number"
+                name="pin_code"
+                id="pin_code"
+                placeholder="Enter your pin code"
+              />
+            </div>
+            <div class="form_control">
+              <label for="dateOfBirth"> DOB </label>
+              <input type="date" name="dateOfBirth" id="dateOfBirth" />
+            </div>
+            <div class="form_control">
+              <label for="user_resume"> Upload your Resume </label>
+              <input type="file" id="user_resume" />
+            </div>
+          </div>
+          <div class="user_submit_btn">
+            <button type="submit" value="" id="user_submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

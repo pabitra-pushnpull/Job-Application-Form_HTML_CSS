@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  /*background-color: #ffd8df;*/
+}
+
+body {
+  /*background-color: #f0ffdf;*/
+  /*background-color: #f0ffdf;*/
+  /* background-color: #edfff0; */
+  background-color: #7eacb5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apply_box h1 {
+  color: black;
+  text-align: center;
+}
+
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.2);
+  /*  background-color: aqua;*/
+  border-radius: 10px;
+  /*background-color: #ffd8df;*/
+  /* background-color: #0ac4e0; */
+  background-color: aliceblue;
+  border: 2px solid #16476a;
+}
+
+.title_small {
+  font-size: 20px;
+}
+
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: larger;
+  color: #2b2b2b;
+  margin-bottom: 5px;
+}
+
+.form_control select {
+  text-align: center;
+  color-scheme: initial;
+}
+
+select,
+textarea,
+input {
+  padding: 6px 10px;
+  border: 3px solid cornflowerblue;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.head_image img {
+  margin-trim: all;
+  width: 550px;
+  border-radius: 10px;
+  border: 5px greenyellow solid;
+  transition: all 0.2s ease-in;
+}
+
+.user_submit_btn {
+  margin-top: 20px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: end;
+}
+
+#user_submit {
+  background-color: greenyellow;
+  width: 120px;
+  height: 25px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+  margin-bottom: 20px;
+}
+
+#user_submit:hover {
+  width: 125px;
+  height: 30px;
+  background-color: springgreen;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.textarea_control {
+  grid-column: span 2;
+}
+
+.textarea_control textarea {
+  width: 100%;
+}
+
+@media (max-width: 462px) {
+  .textarea_control {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 592px) {
+  .head_image img {
+    width: 100%;
+  }
+}
+
+.head_image:hover img {
+  transform: scale(1.04);
+  /* width: 560px; */
+  transition: all 0.3s ease-out;
+}
+
+select:hover,
+textarea:hover,
+input:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: yellow;
+}
